@@ -29,3 +29,7 @@ Tests for each day are tagged so that tests for a single day can be run like thi
 ```
 mix test --only day01
 ```
+
+## Credits
+
+Project structure based on [Advent of Code Elixir Starter](https://github.com/mhanberg/advent-of-code-elixir-starter).
