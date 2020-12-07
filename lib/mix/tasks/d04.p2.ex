@@ -1,10 +1,6 @@
 defmodule Mix.Tasks.D04.P2 do
   use Mix.Task
+  require Advent.Puzzle
 
-  @shortdoc "Day 04 Part 2"
-  def run(_args) do
-    Advent.Input.read!("04")
-    |> Advent.Day04.part2()
-    |> IO.inspect(label: "Part 2 Results")
-  end
+  Advent.Puzzle.run_day_part("04", "2")
 end
