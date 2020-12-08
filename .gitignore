@@ -27,3 +27,6 @@ aoc2020-*.tar
 
 # VS Code Elixir Language Server
 /.elixir_ls
+
+# VS Code config
+/.vscode
