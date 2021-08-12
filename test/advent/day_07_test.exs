@@ -21,4 +21,19 @@ defmodule Advent.Day07Test do
 
     assert part1(input) == 4
   end
+
+  @tag :day7
+  test "part2" do
+    input = """
+    shiny gold bags contain 2 dark red bags.
+    dark red bags contain 2 dark orange bags.
+    dark orange bags contain 2 dark yellow bags.
+    dark yellow bags contain 2 dark green bags.
+    dark green bags contain 2 dark blue bags.
+    dark blue bags contain 2 dark violet bags.
+    dark violet bags contain no other bags.
+    """
+
+    assert part2(input) == 126
+  end
 end

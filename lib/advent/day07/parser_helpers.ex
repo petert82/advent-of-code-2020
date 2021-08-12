@@ -70,6 +70,7 @@ defmodule Advent.Day07.Parser.Helpers do
     |> ignore(string(" contain "))
     |> concat(bag_contents())
     |> ignore(string("."))
+    # convert the kw list `[bag: "light red", contents: [...]]` into a map
     |> reduce({Map, :new, []})
   end
 
