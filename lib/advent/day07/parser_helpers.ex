@@ -29,16 +29,12 @@ defmodule Advent.Day07.Parser.Helpers do
     integer(min: 1)
   end
 
-  def bag_content_to_tuple([count, spec]) do
-    {count, spec}
-  end
-
   # "1 bright white bag"
   def bag_content do
     number()
     |> ignore(string(" "))
     |> concat(bag_spec())
-    |> reduce({Advent.Day07.Parser.Helpers, :bag_content_to_tuple, []})
+    |> reduce({List, :to_tuple, []})
   end
 
   # 1 bright white bag, 2 muted yellow bags
